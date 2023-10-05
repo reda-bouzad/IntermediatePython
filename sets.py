@@ -47,5 +47,28 @@ print(diffB)
 print(mySymDiff)
 print(symDiff)
 
+# updating a set
+championsList = {"Jhon", "Adam", "Rob"}
+heroesList = {"Bob", "Jhon", "Linda"}
+championsList.update(heroesList)
 
+
+# intersection
+colorsList = {"red", "blue", "green"}
+anotherColorsList = {"pink", "blue", "yellow"}
+
+colorsList.intersection_update(anotherColorsList)
+print(colorsList)
+
+# subsets
+setUp = {1, 2, 3, 4, 5, 6}
+setDown = {1, 2, 3}
+
+print(setUp.issubset(setDown))
+print(setDown.issubset(setUp))
+
+
+# forozen set
+myFrozenSet = frozenset({"Max", "Darc", "Jhon"})
+print(myFrozenSet)
 
