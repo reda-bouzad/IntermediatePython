@@ -1,3 +1,5 @@
+## Lists are ordered, mutable, allows duplicate elements ##
+
 # creating a new list:
 myList = ['Apple', 'Banana', True, 5]
 numberList = [15, 2, 14, 13]
@@ -72,6 +74,24 @@ print(venusList)
 print(plutoList)
 print(erisList)
 
+# copying a list : when we modify blueList we also modify redList, they refere to the same list in the memory
+redList = ["planet", "galaxy", "star"]
+blueList = redList
+blueList.append("sun")
+print(redList)
+print(blueList)
+
+# cloning a list 
+yellowList = ["tea", "cafe", "juice"]
+greenList = yellowList.copy()
+yellowList.append("water")
+print(yellowList)
+print(greenList)
+
+# changing everyElement in array
+blackList = [1, 2, 3, 4, 5]
+whiteList = [i*i for i in blackList]
+print(whiteList)
 
 # removing all elements on array
 myList.clear()
